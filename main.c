@@ -80,7 +80,7 @@ void *thread2_handler(void *arg)
     while(1){
 
         gpio_toggle(GPIO_PIN(PORT_C,9));
-        xtimer_periodic_wakeup(&last_wakeup_one, 100000);
+        xtimer_periodic_wakeup(&last_wakeup_one, 1000000);
 
     }
 
